@@ -1,0 +1,18 @@
+body {
+  background-color: lightgray;
+  font-family: "Oxygen", sans-serif;
+}
+.main {
+  background-color: gray;
+  padding: 15px;
+  margin: auto;
+  border-radius: 0% 5% 0% 5%;
+}
+
+h1 {
+  font-family: "Acme", sans-serif;
+}
+
+button {
+  margin-right: 8px;
+}

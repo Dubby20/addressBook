@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Address Book</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Oxygen" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-8 main">
+          <div class="row">
+            <div class="col align-self-center">
+              <br>
+              <h1 class="text-center">Address Book Data</h1>
+            </div>
+          </div>
+          <div class="col-md-12 center-block">
+            <form id="addressbook" action="">
+              <div class="form-group row">
+                <label for="name" class="col-sm-3 col-form-label">Name:</label>
+                <div class="col-sm-9 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input id="name" class="form-control" type="text" placeholder="Your name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-sm-3 col-form-label">Phone Number:</label>
+                <div class="col-sm-9 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input id="phonenumber" class="form-control" type="text" placeholder="Your phone number">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-sm-3 col-form-label">E-Mail:</label>
+                <div class="col-sm-9 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input id="emailaddress" class="form-control" type="text" placeholder="Your e-mail address">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-sm-3 col-form-label">Address:</label>
+                <div class="col-sm-9 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input id="address" class="form-control" type="text" placeholder="Your address">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-sm-3 col-form-label">City:</label>
+                <div class="col-sm-9 input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <input id="city" class="form-control" type="text" placeholder="Your city">
+                </div>
+              </div>
+              <div class="form-group text-center">
+                <button id="addcontact" type="button" class="btn btn-info btn-sm" value="submit">Add Contact</button>
+              </div>
+            </form>
+            <div class="lists">
+              <div id="contacts"></div>
+              <div class="empty"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
